@@ -12,7 +12,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
-        font-size: 11px;
+        font-size: 15px;
         text-align: center;
       }
       .attribution a {
@@ -20,17 +20,46 @@
       }
     </style>
   </head>
+  <div class="container">
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: hsl(240, 8%, 97%);
+        color: #68778d;
+        text-align: center;
+        padding: 20px;
+      }
+      .container {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+      }
+    </style>
   <body>
-    <img
-      alt="  QR code"
-      src="images/image-qr-code.png"
-      height="200"
-      width="200"
-    />
-    Improve your front-end skills by building projects Scan the QR code to visit
-    Frontend Mentor and take your coding skills to the next level
-
-    <div class="attribution">
+    <div class="container">
+      <img src="images/image-qr-code.png"
+        alt="QR code"
+        class="qr-code"
+        text-align="center"/>
+      <style> img {
+        border-radius: 20px 20px 20px 20px;
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+        }</style>
+      <!-- QR code image -->
+      <h1>Improve your front-end skills by building projects </h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+    <di class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
