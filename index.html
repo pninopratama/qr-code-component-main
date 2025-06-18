@@ -1,82 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-
-    <title>Frontend Mentor | QR code component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor QR Code</title>
     <style>
-        body 
-        {
-            width: 375px;
-            margin: 0 auto;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
         }
-        @media screen and (max-width: 1440px) {
-            body 
-        {
-        width: 100%;
-        margin: 0;
+        
+        body {
+            background-color: #d5e1ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
+        
+        .card {
+            background-color: white;
+            width: 320px;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .qr-code {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 24px;
+        }
+        
+        h1 {
+            color: #1f3251;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        p {
+            color: #7b879d;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            padding: 0 16px;
         }
     </style>
-  </head>
-  <div class="container">
-    <style>
-      body {
-        font-family: "Outfit", sans-serif;
-        background-color: hsl(240, 8%, 97%);
-        color: #68778d;
-        text-align: center;
-        padding: 20px;
-      }
-      .container {
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        max-width: 300px;
-        margin: auto;
-      }
-    </style>
-  <body>
-    <div class="container">
-      <img src="images/image-qr-code.png"
-        alt="QR code"
-        class="qr-code"
-        text-align="center"/>
-      <style> img {
-        border-radius: 20px 20px 20px 20px;
-        width: 90%;
-        height: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.2s;
-        }</style>
-      <!-- QR code image -->
-      <h1>Improve your front-end skills by building projects </h1>
-        <style> h1
-        {
-          @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Martian+Mono:wght@100..800&family=Outfit:wght@100&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,600;1,600&display=swap');
-          font-size: 20px;
-          font-weight: 900
-          font-color: #000;
-        }
-      </style>
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </p>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <img src="images/image-qr-code.png" alt="QR Code" class="qr-code">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        <p><p>Coded by <a href="https://www.frontendmentor.io/profile/pninopratama">Pranidimas Nino Pratama</a></p>
     </div>
-    <di class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Pranidimas Nino Pratama</a>.
-    </div>
+</body>
+</html>
+    
   </body>
 </html>
